@@ -1,0 +1,6 @@
+<resources>
+<string-array name="Shape">
+<item>مربع</item>
+<item>مثلث</item>
+</string-array>
+</resources>

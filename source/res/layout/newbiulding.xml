@@ -1,0 +1,104 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/absoluteLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:onClick="onclick"
+            android:text="Next" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:text="Building Information"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewTitle"
+            android:layout_alignRight="@+id/textViewTitle"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_marginTop="34dp"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextName"
+            android:layout_toLeftOf="@+id/editTextName"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinnerShape"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_below="@+id/editTextName"
+            android:layout_marginTop="24dp" />
+
+        <Spinner
+            android:id="@+id/spinnerParent"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinnerShape"
+            android:layout_alignRight="@+id/spinnerShape"
+            android:layout_below="@+id/spinnerShape"
+            android:layout_marginTop="21dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinnerParent"
+            android:layout_alignRight="@+id/spinnerParent"
+            android:layout_below="@+id/spinnerParent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/TextView0Shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinnerShape"
+            android:layout_toLeftOf="@+id/spinnerShape"
+            android:text="Shape"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/editTextparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinnerParent"
+            android:layout_alignBottom="@+id/spinnerParent"
+            android:layout_toLeftOf="@+id/spinnerParent"
+            android:layout_marginBottom="15dp"
+            android:text="Parent"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinnerCategory"
+            android:layout_alignBottom="@+id/spinnerCategory"
+            android:layout_toLeftOf="@+id/spinnerCategory"
+            android:text="Category"
+            android:layout_marginBottom="15dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>

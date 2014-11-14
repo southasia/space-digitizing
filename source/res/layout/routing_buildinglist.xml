@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listViewFrontBuilding"
+        android:layout_width="wrap_content"
+        android:layout_height="358dp"
+        android:layout_above="@+id/buttonRefresh"
+        android:layout_alignParentTop="true" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonRefresh"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="Refresh" />
+
+    <Button
+        android:id="@+id/buttonSelect"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/buttonRefresh"
+        android:onClick="onClick"
+        android:text="Select" />
+
+    <Button
+        android:id="@+id/buttonShowAll"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/buttonRefresh"
+        android:onClick="onClick"
+        android:text="ShowAll" />
+
+</RelativeLayout>
+    

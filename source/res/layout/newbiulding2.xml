@@ -1,0 +1,45 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/absoluteLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Building Floors"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ListView
+            android:id="@+id/listViewFloors"
+            android:layout_width="277dp"
+            android:layout_height="354dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true" >
+        </ListView>
+
+        <Button
+            android:id="@+id/buttonNewFloor"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/listViewFloors"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:onClick="onclick"
+            android:text="New" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buttonNewFloor"
+            android:layout_alignBottom="@+id/buttonNewFloor"
+            android:layout_alignRight="@+id/listViewFloors"
+            android:onClick="onclick"
+            android:text="Next" />
+
+    </RelativeLayout>

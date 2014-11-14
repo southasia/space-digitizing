@@ -1,0 +1,44 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/absoluteLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Building Location"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ListView
+            android:id="@+id/listViewPoints"
+            android:layout_width="279dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true" >
+        </ListView>
+
+        <Button
+            android:id="@+id/buttonNewPoint"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/listViewPoints"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:onClick="onclick"
+            android:text="Add Current Point" />
+
+        <Button
+            android:id="@+id/buttonFinish"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/buttonNewPoint"
+            android:layout_alignRight="@+id/listViewPoints"
+            android:onClick="onclick"
+            android:text="Finish" />
+
+    </RelativeLayout>
